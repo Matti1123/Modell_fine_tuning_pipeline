@@ -21,7 +21,7 @@ model = torchvision.models.segmentation.deeplabv3_resnet50(weights="DEFAULT")
 model.classifier[4] = nn.Conv2d(256, 1, kernel_size=1)  # 1 Klasse (Tier)
 model = model.to(device)
 
-# ---- Loss + Optimizer ----
+# ---- Loss + Optimizer
 criterion = nn.BCEWithLogitsLoss()
 optimizer = torch.optim.Adam(model.parameters(), lr=1e-4)
 
