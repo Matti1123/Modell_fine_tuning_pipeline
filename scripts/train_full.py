@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader, random_split
 import torchvision
+from tqdm import tqdm
+
 
 from scripts.dataset import PetDataset
 
@@ -81,13 +83,15 @@ def compute_iou(preds, masks, threshold=0.5):
 # TRAINING LOOP
 # =========================
 
+
+
 for epoch in range(num_epochs):
 
     # -------- TRAINING --------
     model.train()
     train_loss = 0
 
-    for images, masks in train_loader:
+    for images, masks in tqdm(train_loader):
         images = images.to(device)
         masks = masks.to(device)
 
