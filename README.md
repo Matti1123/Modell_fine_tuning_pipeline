@@ -16,3 +16,13 @@ The goal is to adapt a pretrained encoder within a U-Net model to the task of bi
 
 Oxford-IIIT Pet Dataset  
 Task: Binary image segmentation
+
+
+## Testing
+
+Epoch 1/5
+Train Loss: 0.2746
+Val Loss:   0.1947
+Val IoU:    0.7726
+----------------------------------------
+
