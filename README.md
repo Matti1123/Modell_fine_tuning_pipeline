@@ -20,23 +20,23 @@ Task: Binary image segmentation
 
 ## Testing
 
-- Epoch 1/5
+- ### Epoch 1/5
 - Train Loss: 0.2746
 - Val Loss:   0.1947
 - Val IoU:    0.7726
 
-- Epoch 2/5
+- ### Epoch 2/5
 - Train Loss: 0.1720
 - Val Loss:   0.1690
 - Val IoU:    0.7750
 
-- Epoch 3/5
+- ### Epoch 3/5
 - Train Loss: 0.1383
 -  Loss:   0.1586
 - Val IoU:    0.7923
 
 
-- Epoch 4/5
+- #### Epoch 4/5
 - Train Loss: 0.1194
 - Val Loss:   0.1783
 - Val IoU:    0.7760
