@@ -42,7 +42,7 @@ with torch.no_grad():
         output = model(img)['out']  # [1,1,H,W]
 
         # 1-Klassen Vorhersage
-        pred_mask = (output[0,0] > 0.5).float().cpu()  # 0/1
+        pred_mask = (output[0,0] > 0.3).float().cpu()  # 0/1
 
         img_show = img[0].cpu().permute(1,2,0)  # CHW -> HWC
 
